@@ -18,7 +18,10 @@ An AI assistant (Claude) is used as a mentor, not as an author:
 - **Teaching:** it explains algorithms, data structures and trade-offs, and answers questions.
 - **Reviewing:** it reads my code and points out bugs, edge cases and simpler designs. I make the fixes.
 
-It does not write the implementation: no index, no winnowing, no alignment, no classifier, no C code. The one exception is this first commit (dev container, requirements, `.gitignore` and this README), which is environment setup that Claude wrote at my request.
+It does not write the implementation: no index, no winnowing, no alignment, no classifier, no C code. There are two exceptions, both plumbing that Claude wrote at my request:
+
+- the first commit (dev container, requirements, `.gitignore` and this README), which is environment setup;
+- `winnow/wikidump.py`, which streams `(id, title, raw wikitext)` out of the Wikipedia XML dump. Cleaning that wikitext into plain text is my own code.
 
 Libraries are used only for plumbing (arrays, file formats, AWS access) and to check my own implementations against a reference, never in place of them.
 
