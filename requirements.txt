@@ -1,0 +1,20 @@
+# Plumbing only. The core algorithms (index, winnowing, MinHash, alignment,
+# classifier) are written by hand in this repo, not imported.
+
+# Arrays and data handling
+numpy>=1.26
+pandas>=2.2
+scipy>=1.12
+
+# Only to check our own classifier against a reference implementation
+scikit-learn>=1.4
+
+# Charts for evaluation results
+matplotlib>=3.8
+
+# Tests and lint
+pytest>=8.0
+ruff>=0.4
+
+# AWS from Python (S3 uploads and downloads)
+boto3>=1.34

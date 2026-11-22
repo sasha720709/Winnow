@@ -1,0 +1,27 @@
+# Data: dumps, corpora and built indexes are large and never committed
+data/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# C build output
+*.o
+*.so
+*.a
+build/
+
+# Terraform state and secrets (the .terraform.lock.hcl file IS committed)
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+.env
+
+# Editors and OS
+.DS_Store
+.idea/
